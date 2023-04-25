@@ -14,7 +14,11 @@
     for(Customer customer: customers) {
 %>
 <ul>
-    <li><% out.println(String.format("Raison sociale : %s", customer.companyName())); %></li>
+    <li>
+        <a href="/customers-api/details?id=<% out.println(customer.referenceId()); %>">
+            <% out.println(String.format("Raison sociale : %s", customer.companyName())); %>
+        </a>
+    </li>
     <li><% out.println(String.format("Ville : %s", customer.town())); %></li>
     <li><% out.println(String.format("Adresse : %s", customer.address())); %></li>
     <li><% out.println(String.format("Siret : %s", customer.siret())); %></li>

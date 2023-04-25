@@ -19,4 +19,14 @@
         <location>/error</location>
     </error-page>
 
+    <error-page>
+        <exception-type>fr.esgi.customer.exception.MissingCustomerIdException</exception-type>
+        <location>/invalid-parameter</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>fr.esgi.customer.exception.NotFoundCustomerException</exception-type>
+        <location>/not-found</location>
+    </error-page>
+
 </web-app>

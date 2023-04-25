@@ -24,7 +24,7 @@ public class CustomersConsultationServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Customer> customers = customersFileParser.parse("custmers.csv");
+        List<Customer> customers = customersFileParser.parse("customers.csv");
 
         req.setAttribute(Customer.class.getName(), customers);
 
