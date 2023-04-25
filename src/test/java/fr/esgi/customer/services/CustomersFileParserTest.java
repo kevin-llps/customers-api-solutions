@@ -1,10 +1,9 @@
-package services;
+package fr.esgi.customer.services;
 
 import fr.esgi.customer.beans.Customer;
 import fr.esgi.customer.exception.CustomersResourceNotFoundException;
-import fr.esgi.customer.services.CustomersFileParser;
+import fr.esgi.customer.samples.CustomerSample;
 import org.junit.jupiter.api.Test;
-import samples.CustomerSample;
 
 import java.util.List;
 

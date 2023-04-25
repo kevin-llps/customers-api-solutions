@@ -1,4 +1,4 @@
-package samples;
+package fr.esgi.customer.samples;
 
 import fr.esgi.customer.beans.Customer;
 
